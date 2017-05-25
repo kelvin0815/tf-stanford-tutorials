@@ -1,6 +1,6 @@
 """
 Solution to simple TensorFlow exercises
-For the problems 
+For the problems
 """
 
 import tensorflow as tf
@@ -24,12 +24,12 @@ out = tf.cond(tf.greater(x, y), lambda: tf.add(x, y), lambda: tf.sub(x, y))
 
 x = tf.random_uniform([], -1, 1, dtype=tf.float32)
 y = tf.random_uniform([], -1, 1, dtype=tf.float32)
-out = tf.case({tf.less(x, y): lambda: tf.add(x, y), 
-			tf.greater(x, y): lambda: tf.sub(x, y)}, 
+out = tf.case({tf.less(x, y): lambda: tf.add(x, y),
+			tf.greater(x, y): lambda: tf.sub(x, y)},
 			default=lambda: tf.constant(0.0), exclusive=True)
 
 ###############################################################################
-# 1c: Create the tensor x of the value [[0, -2, -1], [0, 1, 2]] 
+# 1c: Create the tensor x of the value [[0, -2, -1], [0, 1, 2]]
 # and y as a tensor of zeros with the same shape as x.
 # Return a boolean tensor that yields Trues if x equals y element-wise.
 # Hint: Look up tf.equal().
@@ -40,7 +40,7 @@ y = tf.zeros_like(x)
 out = tf.equal(x, y)
 
 ###############################################################################
-# 1d: Create the tensor x of value 
+# 1d: Create the tensor x of value
 # [29.05088806,  27.61298943,  31.19073486,  29.35532951,
 #  30.97266006,  26.67541885,  38.08450317,  20.74983215,
 #  34.94445419,  34.45999146,  29.06485367,  36.01657104,
