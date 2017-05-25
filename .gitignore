@@ -12,3 +12,7 @@ examples/chatbot/checkpoints/*
 examples/chatbot/data_analysis.py
 
 assignments/chatbot/processed/*
+
+*/.ipynb_checkpoints
+*/MNIST_data/
+*/notMNIST_data/
